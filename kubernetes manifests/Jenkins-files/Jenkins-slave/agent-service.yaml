@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: slave-service
+  namespace: devops-tools
+spec:
+  selector:
+    app: jenkins-slave
+  ports:
+    - port: 22
+      targetPort: 22
+      protocol: TCP

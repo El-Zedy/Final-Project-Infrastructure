@@ -40,11 +40,45 @@
       
         kubectl create ns devops-tools
       
-      - create serviceaccount, pristance volume, pristance volume claim, deployment and loadblancer service.
+    - create serviceaccount, pristance volume, pristance volume claim, deployment and loadblancer service - yml files.
 
-      - hint: you can find all manifests files at `kubernetes manifests` directory
+        *hint: you can find all manifests files at `kubernetes manifests/Jenkins-files` directory*
+        
+             kubectl create -f <serviceaccount_filename> 
+             kubectl create -f <volume_filename> 
+             kubectl create -f <deployment_filename> 
+             kubectl create -f <service_filename>
+             kubecttl get all -n devops-tools
+             
+     - get service external-ip to access jenkins from browser
+
+             Hit `EXTERNAL_IP:8080` on your browser
+     
+     - git jenkins password
+            
+            kubectl exec -it <jenkins-pod> -n devops-tools -- cat /var/jenkins_home/secrets/initialAdminPassword
+
       
-      
+- Deploy jenkins slave
+    
+    - create deployment and service - yml files to our slave
+    
+        *hint: you can find all manifests files at `kubernetes manifests/Jenkins-files/Jenkins-slave` directory*
+        
+            kubectl create -f <deployment_filename> 
+            kubectl create -f <service_filename> 
+            
+- Prepare our slave node
+        
+        kubectl exec -it <jenkins-agent> -n devops-tools -- bash
+        passwd jenkins
+        sercive ssh start
+        chmod 666 /var/run/docker.socket
+        apt-get install gettext-base
+        su jenkins
+        gcloud container clusters get-credentials <privatecluster_name> --zone <zone_name> --project <project_id>
+
+            
       
       
       

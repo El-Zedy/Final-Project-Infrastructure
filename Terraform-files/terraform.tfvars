@@ -21,3 +21,5 @@ workern_imagetype = "ubuntu_containerd"
 workern_oauthscopes = ["https://www.googleapis.com/auth/cloud-platform"]
 accounts = ["gke-sa", "instance-sa"]
 roles = ["roles/storage.objectAdmin", "roles/container.admin"]
+storage-role-admin = "roles/storage.admin"
+containe-role-admin = "roles/container.admin"

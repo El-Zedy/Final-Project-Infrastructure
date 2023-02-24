@@ -61,6 +61,14 @@
       
 - Deploy jenkins slave
     
+    - build our slave image from Dockerfile at `kubernetes manifests/Jenkins-files/Jenkins-slave`
+        
+            docker build -t moelzedy/jenkins-slave-finalv.
+            
+    - push slave image to dockerhub
+
+            docker push moelzedy/jenkins-slave-finalv 
+
     - create deployment and service - yml files to our slave
     
         *hint: you can find all manifests files at `kubernetes manifests/Jenkins-files/Jenkins-slave` directory*

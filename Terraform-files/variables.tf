@@ -64,5 +64,8 @@ variable "workern_oauthscopes" {
 variable "accounts" {
 }
 variable "roles" {
-  
+}
+variable "storage-role-admin" {
+}
+variable "containe-role-admin" {
 }

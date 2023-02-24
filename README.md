@@ -1,4 +1,4 @@
-# ITI-Final-Project-Infrastructure
+# ITI-Final-Project-Infrastructure :memo:
 :white_check_mark: This repository is designed to deploy a secure infrastructure on `Google Cloud Platform (GCP)` using `Terraform`. The infrastructure includes:
 - Virtual Private Cloud (VPC) with two subnets 
     - NAT gateway

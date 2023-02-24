@@ -8,7 +8,7 @@
 - The Restricted Subnet contains:
     - `Private standard GKE cluster (private control plan)`.
     
-:white_check_mark: This repository also include all kubernetes manifests to deply `Jenkins and its slaves` on our GKE cluster.
+:white_check_mark: This repository also include all kubernetes manifests to deploy `Jenkins and its slaves` on our GKE cluster.
 
 ## Prerequisites
 - Linux system
@@ -85,28 +85,30 @@
 
 - And now at this point we have our infrastructure up and running with jenkins and its slaves as deployment on our GKE cluster :tada::tada:
       
+# What's next?
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
+ create our jenkins pipline to dockerize deploy our our app to public users
+            
+            keep in touch with this repository: https://github.com/El-Zedy/Final-Project-App
+
+## Contributing
+
+Contributions to this project are welcome and appreciated. To contribute, please follow these steps:
+
+1. Fork the repository to your own account.
+2. Create a new branch for your changes.
+3. Make your changes and commit them to your branch.
+4. Create a pull request to merge your changes into the main branch.
+
+## Acknowledgements
+We would like to acknowledge the following individuals and resources for their contributions to this project:
+
+- Our instructors, for providing guidance and support throughout the project.
+- The Google Cloud Platform documentation, which served as a valuable resource for understanding the various GCP services and how they can be used together.
+- The Terraform,Jenkins and Kubernetes documentation, which provided helpful guidance on building our resources.
+- We would also like to thank our classmates and peers for their feedback and contributions to this project.
+
+## Contact
+If you have any questions or suggestions regarding this project, please contact the project owner at muhammadhassanelzedy@gmail.com .
       
       

@@ -10,11 +10,11 @@ resource "google_project_iam_member" "sa-with-roles" {
 }
 resource "google_project_iam_member" "storage-role-admin" {
   project = var.project_id
-  role = "roles/storage.admin"
+  role = var.storage-role-admin
   member = "serviceAccount:${google_service_account.sa[0].email}"
 }
 resource "google_project_iam_member" "containe-role-admin" {
   project = var.project_id
-  role = "roles/container.admin"
+  role = var.containe-role-admin
   member = "serviceAccount:${google_service_account.sa[0].email}"
 }

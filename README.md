@@ -72,7 +72,7 @@
         
         kubectl exec -it <jenkins-agent> -n devops-tools -- bash
         passwd jenkins
-        sercive ssh start
+        service ssh start
         chmod 666 /var/run/docker.socket
         apt-get install gettext-base
         su jenkins

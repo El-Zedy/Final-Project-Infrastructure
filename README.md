@@ -79,8 +79,11 @@
         gcloud container clusters get-credentials <privatecluster_name> --zone <zone_name> --project <project_id>
 
             
-      
-      
+- Add and configure slave node from jenkins ui
+    
+  *hint:* Go to `screenshots` dirctory to double check and make sure that everything going right during your steps.
+
+- And now at this point we have our infrastructure up and running with jenkins and its slaves as deployment on our GKE cluster :tada::tada:
       
       
       
